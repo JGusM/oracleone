@@ -1,15 +1,21 @@
 <meta charset="UTF-8">
+<h1>PROGRAMA</h1>
 <script>
     function saltarLinea() {
-        document.write("<br>");
-    }
+       
+		document.write("<br><br><br><hr><br><br>");    
 
+    }  
+	
     function imprimir(frase) {
-        document.write(frase);
+        document.write("<big>" + frase + "</big>");
+        saltarLinea();
     }
-
-    var miEdad = 18;
-    var edadHermano = 15;
-
-    imprimir("Nuestra diferencia de edad es " + (miEdad - edadHermano));
- </script>
+    var anho = 2025;
+    imprimir("Hola amigos");
+    // este código calcula las edades de Juan, Pedro y Carlos
+    imprimir("Juan tiene: " + (anho-2000) + " años");
+    imprimir("Pedro tiene: " + (anho-1995) + " años");
+    anho = 2030
+    imprimir("Carlos tiene: " + (anho-2005) + " años");
+</script>
