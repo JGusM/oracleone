@@ -12,21 +12,26 @@
 
 	}
 
+	function imprimir (frase){
+		
+		document.write(frase);
+		saltarLinea();
+
+	}
+
 	var anho = 2025
-	var saltoLinea = "<br><br><br>"
 
-	
-	document.write("Juan tiene: " + (anho-2000) + " años");
+	imprimir("Hola amigos")	;
 
-	saltarLinea();	
-	
-	document.write("Pedro tiene: " + (anho-1995) + " años");
+	// este código calcula las edades de Juan, Pedro y Carlos
+
+	imprimir("Juan tiene: " + (anho-2000) + " años");
+
+	imprimir("Pedro tiene: " + (anho-1995) + " años");
 	
 	anho = 2030
 	
-	saltarLinea();	
-	
-	document.write("Carlos tiene: " + (anho-2005) + " años");
+	imprimir("Carlos tiene: " + (anho-2005) + " años");
 
 
 </script>
