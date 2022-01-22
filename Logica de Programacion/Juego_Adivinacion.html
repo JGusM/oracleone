@@ -19,13 +19,27 @@
 
 	}
 
-    var edad = parseInt(prompt("¿Cuál es tu edad?"));
-    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+    var numeroPensado = Math.round(Math.random()*10);
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10"))
 
-    if (edad >= 18 && (tieneLicencia == "S" || tieneLicencia == "s")) {
-        imprimir("Puedes conducir")
-    }else (
-        imprimir("No puedes conducir")
-    )
+    if(numeroPensado == numeroLanzado){
+        imprimir("usted acertó")
+    }else if (numeroPensado > numeroLanzado) {
+        imprimir("usted erró, el número pensado era menor que tu número");
+    }else if (numeroPensado < numeroLanzado) {
+        imprimir("usted erró, el número pensado era mayor que tu número");
+    }
+
+
+    /*
+    else {
+        if (numeroLanzado > numeroPensado) {
+            imprimir("usted erró, el número pensado era menor que tu número");
+        }
+        else {
+            imprimir("usted erró, el número pensado era mayor que tu número")
+        }
+    }
+    */
 
 </script>
