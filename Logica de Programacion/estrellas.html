@@ -18,23 +18,64 @@
 	}
 
 
-    for (var lineas = 1 ; lineas <= 10 ; lineas++) {
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
 
-        for (var columnas = 1 ; columnas <= 10 ; columnas++) {
+    
+    var maximoIntentos = 3;
+    var intentoActual = 1;
+    
+    for (var intentoActual = 1 ; intentoActual <= maximoIntentos ; intentoActual++) {
 
-            document.write(" * ");
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
 
-        }
+if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) { 
 
-        saltarLinea();
+    alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+    break;
+}else if (intentoActual == maximoIntentos){
 
-    }
+    alert("Agotaste el número permitido de intentos!");
 
-    saltarLinea();
-    saltarLinea();
+}
+else {
 
-    imprimir("FIN");
+    alert("Inicio de sesión inválido. Por favor intente de nuevo");
 
+} 
+
+
+}
+
+/*
+while (intentoActual <= maximoIntentos) {
+        
+        var inicioDeSesionIngresado = prompt("Ingrese su usuario");
+        var contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+        if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) { 
+    
+            alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+            break;
+        }else {
+            
+            if (intentoActual == 3) {
+
+                alert("Agotaste el número permitido de intentos!");
+
+            } else {
+
+                alert("Inicio de sesión inválido. Por favor intente de nuevo");
+                
+            }
+    
+            
+        }intentoActual++
+    } 
+*/
+
+imprimir("BIENVENIDO AL SITIO")
 
 
 </script>
