@@ -19,47 +19,14 @@
 
 	}
 
-    var numeroPensado = Math.round(Math.random()*10);
-    var intentos = 3;
-    var contador = 1;
-    
-    
-    
-    while (contador <= intentos) {
-        
-        var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 y 10"));
+    var respuesta = ""; // todavía no hay respuesta 
 
-        if (numeroPensado == numeroLanzado) {
-
-            alert("Usted acertó en el intento nro " + intentos + ". El número pensado era " + numeroPensado);
+    while(true) {
+        respuesta = prompt("¿Cuál es tu nombre?");
+        if( respuesta == "SALIR") {
             break;
-
         }
-
-        else {
-
-            alert("Usted erró");
-
-        }
-
-        contador++;
-
     }
-
-
-    if (numeroPensado == numeroLanzado) {
-
-        imprimir("Usted acertó en el intento nro " + intentos + ". El número pensado era " + numeroPensado);
-
-    }
-
-    else {
-
-        imprimir("usted erró, el número pensado era " + numeroPensado);
-
-    }
-
-
 
     imprimir("FIN");
 
