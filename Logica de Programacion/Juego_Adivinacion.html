@@ -19,12 +19,13 @@
 
 	}
 
-    var contrasenha = prompt("Entra con tu contraseña");
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
 
-    if(contrasenha == "micontrasenha123") {
-        alert("Acceso liberado!");
-    } else {
-        alert("Acceso negado!");
-    }
+    if (edad >= 18 && (tieneLicencia == "S" || tieneLicencia == "s")) {
+        imprimir("Puedes conducir")
+    }else (
+        imprimir("No puedes conducir")
+    )
 
 </script>
