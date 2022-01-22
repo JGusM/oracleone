@@ -19,20 +19,12 @@
 
 	}
 
-	var numeroPensado = Math.round(Math.random()*10);
-    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0 y 10"));
+    var contrasenha = prompt("Entra con tu contraseña");
 
-    if (numeroPensado == numeroLanzado) {
-        
-        imprimir("GANASTE")
-
+    if(contrasenha == "micontrasenha123") {
+        alert("Acceso liberado!");
+    } else {
+        alert("Acceso negado!");
     }
-
-    else {
-
-        imprimir("NO, ERA EL " + numeroPensado + " PROBA DE NUEVO")
-
-    }
-
 
 </script>
