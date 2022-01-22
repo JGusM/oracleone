@@ -25,13 +25,12 @@
     if(numeroPensado == numeroLanzado){
         imprimir("usted acertó")
     }else if (numeroPensado > numeroLanzado) {
-        imprimir("usted erró, el número pensado era menor que tu número");
+        imprimir("usted erró, el número pensado era: " + numeroPensado + " y fue mayor que su número " + numeroLanzado);
     }else if (numeroPensado < numeroLanzado) {
-        imprimir("usted erró, el número pensado era mayor que tu número");
+        imprimir("usted erró, el número pensado era: " + numeroPensado + " y fue menor que su número " + numeroLanzado);
     }
 
-
-    /*
+	 /*
     else {
         if (numeroLanzado > numeroPensado) {
             imprimir("usted erró, el número pensado era menor que tu número");
