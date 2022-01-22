@@ -19,25 +19,14 @@
 
 	}
 
+    var contador = 2;
 
-
-    var numeroMiembros = parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
-    var contador = 1;
-    var totalEdades = 0;
-
-    while (contador <= numeroMiembros) {
-
-        edad = parseInt(prompt("Ingrese la edad del familiar"));
-        totalEdades = totalEdades + edad;
-        contador++;
-
+    while (contador <= 100) {
+        
+        imprimir("Ahora el número es " + contador);
+        contador = contador + 2;
     }
-        
-        mediaEdades = totalEdades/numeroMiembros;
 
-        imprimir("La media de las edades de la familia es " + mediaEdades);
+        imprimir("FIN");
 
-        imprimir("Fin");
-
-        
 </script>
