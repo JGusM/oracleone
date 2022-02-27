@@ -181,6 +181,9 @@ td,th {
 .items {
     line-height: 1.5;
 }
+.items:before {
+    content: '★ ';
+}
 .items:first-child {
     font-weight: bold;
 }
